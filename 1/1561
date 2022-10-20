@@ -1,0 +1,6 @@
+a = input()
+if a.index(',') != ValueError:
+    a = a[0:a.index(',')] + 'm' + a[a.index(',') + 1:len(a)]
+    a = a[0:a.index(',')]
+    a = a.replace('m','.')
+    print(float(a))
